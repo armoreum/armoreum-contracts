@@ -1,0 +1,13 @@
+name: Feature request
+description: Propose a focused improvement.
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: User need and proposed change
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Alternatives, compatibility, and security considerations

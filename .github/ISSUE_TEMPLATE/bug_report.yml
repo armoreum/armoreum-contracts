@@ -1,0 +1,22 @@
+name: Bug report
+description: Report a reproducible source issue.
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include secrets or recovery files. Report vulnerabilities privately to support@armoreum.io."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction using synthetic data
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Commit, environment, and check results

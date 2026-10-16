@@ -1,0 +1,9 @@
+title = "Armoreum source secret scanning"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Public 20-byte EVM addresses are not private signing keys"
+regexTarget = "secret"
+regexes = ['''(?i)^0x[0-9a-f]{40}$''']
