@@ -17,6 +17,10 @@ Operator scripts commonly load `deployments/` records. Those records must be cre
 
 `scripts/activate-atomic-relay.cjs` imports `bridgeRelayPolicy.ts` from an API-server workspace outside this repository. That API-server source was not supplied. The script is retained for source transparency, not advertised as independently runnable.
 
+`scripts/upgrade-launch-mode-policy-mainnet.cjs` reads `../api-zod/src/network-config.ts` through `readPonsFactoryFromApiConfig()`. That sibling schema/configuration package is also absent. A populated contract repository alone cannot satisfy this script's dependencies.
+
 `LOCAL-MULTICHAIN.md` describes an original full-stack workspace. Its backend integration instructions require the missing server and workspace structure. The local Hardhat node commands in the main README do not themselves restore that full stack.
 
 The archive did not include a dependency lockfile. Compilation, full contract tests, an independently reviewed dependency resolution, third-party license review, and a vulnerability audit are prerequisites to a deployable package. No production deployment is performed by this source publication.
+
+See [repository map](repository-map.md) for evidence and the remaining source inventory.

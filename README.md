@@ -15,6 +15,8 @@ Live deployment manifests, deployment history, cached compiler outputs, build ar
 
 ## Components
 
+See the [cross-repository map](docs/repository-map.md) for the full system inventory. This contract repository is only one part of the application architecture.
+
 | Area | Source |
 | --- | --- |
 | Creator rewards and protected withdrawals | `CreatorRewardVault.sol`, `JailReceiptToken.sol` |
