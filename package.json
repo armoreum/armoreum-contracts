@@ -1,6 +1,6 @@
 {
   "name": "@armoreum/contracts",
-  "version": "0.1.0-source.1",
+  "version": "0.1.0-source.2",
   "description": "Solidity source for Armoreum creator vaults, reward accounting, token launch infrastructure, and cross-chain bridge components.",
   "license": "MIT",
   "repository": {

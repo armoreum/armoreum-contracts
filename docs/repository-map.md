@@ -4,21 +4,21 @@
 
 The public application and contract repositories cover the two supplied package archives. They are not a complete export of the full system.
 
-The detailed evidence and proposed seven-area publication map are maintained in the [application repository inventory](https://github.com/armoreum/armoreum/blob/main/docs/repository-map.md).
+The source-grounded seven-repository map and missing-runtime evidence are maintained in the [application repository inventory](https://github.com/armoreum/armoreum/blob/main/docs/repository-map.md).
 
-## Seven-area proposed layout
+## Artifact-based publication layout
 
-| Repository / proposed repository | Evidence and status |
+| Repository | Evidence and status |
 | --- | --- |
 | `armoreum` | Supplied frontend package; published source preview |
 | `armoreum-contracts` | Supplied contract package; published source preview |
-| `armoreum-api` | API-server path directly referenced by a relay script; implementation absent |
-| `armoreum-api-client` | `@workspace/api-client-react` directly imported by the application; implementation absent |
-| `armoreum-api-schemas` | `@workspace/api-zod` imported by the application and network configuration read by an operator script; implementation absent |
-| `armoreum-database` | PostgreSQL responsibility described in the supplied overview; separate source package not confirmed |
-| `armoreum-api-spec` | OpenAPI/generation responsibility described in the overview; separate source package not confirmed |
+| `armoreum-authorization` | Existing hash-chain/password/signing libraries and verifier contracts extracted with provenance |
+| `armoreum-recovery` | Existing QRC libraries, shared source dependency, and tests extracted with provenance |
+| `armoreum-bridge` | Existing bridge/relay contracts with local import closure and explorer/retry/error helpers |
+| `armoreum-launchpad` | Existing token-deployer/V4/launch contract closure and routing/funding helpers |
+| `armoreum-docs` | Supplied overview, architecture, product scope, security, and economic reference |
 
-The five proposed names are not claims that those repositories or original standalone packages have been recovered. Database and specification source might be located inside another package in the original workspace.
+The five additional repositories are module/documentation extractions, not five recovered original workspace packages. Shared copies have source-path and checksum manifests. The absent backend, client/schema packages, database, and API specification are not fabricated.
 
 ## Contract-side dependencies beyond this repository
 
@@ -32,9 +32,9 @@ Neither referenced source file is supplied. Scripts that load deployment manifes
 
 All 96 supplied non-generated code file paths are retained: 46 Solidity files and 50 CommonJS files. No additional package manifests or nested source archives were found in the contract ZIP. This is a file-path coverage statement, not a full compilation, integration-test, audit, or deployment guarantee.
 
-## Next prerequisite
+## Remaining system limits
 
-The complete original workspace is needed to establish the remaining package boundaries and recover real source. Creating five empty repositories or copying unrelated modules into them would not make the system complete.
+Seven artifact-based source repositories do not establish a complete running system. The missing server, shared API packages, database schema/migrations, and OpenAPI inputs would still be needed for full-stack restoration.
 
 Do not include real credentials, signer keys, recovery proofs, database exports, user data, or operational history in that source export.
 

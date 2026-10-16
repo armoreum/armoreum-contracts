@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.0-source.2
+
+- Add the source-backed seven-repository ecosystem and shared-source provenance links.
+- Document both missing API-server policy and shared network-configuration dependencies.
+- Record BUSL/LZBL upstream package license metadata without relicensing dependencies.
+
 ## 0.1.0-source.1
 
 - Initial public contract source preview.
